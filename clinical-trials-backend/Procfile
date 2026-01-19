@@ -1,0 +1,1 @@
+web: gunicorn ctri_project.wsgi:application
