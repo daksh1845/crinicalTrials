@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-4br+3g_@d=&kzqm7lknj2_z_^+b0c=sn*%w(z3fmw!a^&t(@wo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ "crinicaltrials.onrender.com" ]
+ALLOWED_HOSTS = [ "crinicaltrials.onrender.com", "127.0.0.1", "localhost", "crinical-trials.vercel.app"] 
 
 
 # Application definition
@@ -128,4 +128,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://crinical-trials.vercel.app",
 ]

@@ -16,7 +16,8 @@ function App() {
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/trials/')
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+    axios.get(`${API_URL}/api/trials/`)
       .then(response => {
         setTrials(response.data);
         setLoading(false);
